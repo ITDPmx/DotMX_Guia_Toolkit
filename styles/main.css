@@ -47,20 +47,23 @@
 .dotmx_pdf2:before {
     content: "\e009";
 }
-.dotmx_transport2:before {
+.dotmx_rar:before {
     content: "\e00a";
 }
-.dotmx_transport21:before {
+.dotmx_transport2:before {
     content: "\e00b";
 }
-.dotmx_twitter:before {
+.dotmx_transport21:before {
     content: "\e00c";
 }
-.dotmx_transport:before {
+.dotmx_twitter:before {
     content: "\e00d";
 }
-.dotmx_excel:before {
+.dotmx_transport:before {
     content: "\e00e";
+}
+.dotmx_excel:before {
+    content: "\e00f";
 }
 
 
@@ -85,7 +88,8 @@
 .dotmx_pdf:before,
 .dotmx_pdf2:before,
 .dotmx_data108:before,
-.dotmx_Infographic:before{
+.dotmx_Infographic:before,
+.dotmx_rar:before{
     font-size: 60px !important;
     color:#455A64;
 }
