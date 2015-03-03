@@ -13,6 +13,12 @@ angular.module('dotmxApp')
 		restrict: 'E',
 	};
 })
+.directive('slidersSection', function () {
+	return {
+		templateUrl: 'views/sections/sliders_section.html',
+		restrict: 'E',
+	};
+})
 .directive('mainSection', function () {
 	return {
 		templateUrl: 'views/sections/main_section.html',
@@ -34,6 +40,12 @@ angular.module('dotmxApp')
 .directive('guideSection', function () {
 	return {
 		templateUrl: 'views/sections/guide_section.html',
+		restrict: 'E',
+	};
+})
+.directive('mapSection', function () {
+	return {
+		templateUrl: 'views/sections/map_section.html',
 		restrict: 'E',
 	};
 })
