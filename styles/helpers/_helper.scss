@@ -1,0 +1,19 @@
+$first-gray:#424242;
+$second-gray:#455A64;
+$third-gray:#dadfe3;
+$dark-gray:#0C1012;
+$white:#ffffff;
+$first-green:#009688;
+$second-green:#74BDB6;
+
+.title-section{
+	color:$first-gray;
+	margin:0 0 10px 0;
+}
+@mixin transition($trans){
+	-moz-transition: $trans;
+	-ms-transition: $trans;
+	-o-transition: $trans;
+	-webkit-transition: $trans;
+	transition: $trans;
+}

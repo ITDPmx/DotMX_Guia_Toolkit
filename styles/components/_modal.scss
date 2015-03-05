@@ -1,0 +1,60 @@
+.modal{
+	background-color: rgba(0,0,0,0.5);
+}
+.modal-dialog.modal-lg{
+	margin:100px auto !important;
+}
+.close{
+	font-size: 30px !important;
+}
+.modal-header{
+	border:none !important;
+}
+.overlay-title{
+	position:absolute;
+	background-color: rgba(116,189,182,0.85);
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-moz-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.overlay-title{
+	a{
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+.work-item-info{
+	bottom: 50%;
+	left: 0;
+	margin-bottom: -2.5em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.work-item-info{
+	h4{
+		color: $white !important;
+		font-weight: 100 !important;
+	}
+}
+.work-item-info{
+	i:before{
+		font-size: 25px;
+	}
+}
