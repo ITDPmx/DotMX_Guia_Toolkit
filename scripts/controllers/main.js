@@ -74,6 +74,8 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 			topHeader.removeClass('black');
 		}
 	});
+
+
 	
 	$("#focus-city > li > a").click( function() {
 		$("#focus-city > li").removeClass("active");
@@ -115,7 +117,7 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 	});
 	
 	L.mapbox.accessToken = 'pk.eyJ1IjoiY2Fhcmxvc2h1Z28xIiwiYSI6IklmZGNsNmMifQ.JJksWU3hBP-Vd3S9WtjFsA';
-	var map = L.mapbox.map('map-box', 'caarloshugo1.h9bggm26',{scrollWheelZoom:false}).setView([19.432711775616433, -99.13325428962708], 13);
+	var map = L.mapbox.map('map-box', 'caarloshugo1.h9bggm26').setView([19.432711775616433, -99.13325428962708], 13);
 	
 	var circleLayer		= new L.LayerGroup();
 	var estacionesLayer	= new L.LayerGroup();
