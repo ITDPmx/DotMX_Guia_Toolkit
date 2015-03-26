@@ -74,8 +74,6 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 			topHeader.removeClass('black');
 		}
 	});
-
-
 	
 	$("#focus-city > li > a").click( function() {
 		$("#focus-city > li").removeClass("active");
@@ -116,16 +114,12 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 		}				
 	});
 	
-	L.mapbox.accessToken = 'pk.eyJ1IjoiY2Fhcmxvc2h1Z28xIiwiYSI6IklmZGNsNmMifQ.JJksWU3hBP-Vd3S9WtjFsA';
-	var map = L.mapbox.map('map-box', 'caarloshugo1.h9bggm26').setView([19.432711775616433, -99.13325428962708], 13);
-	
+	var map 			= false;
+	var sidebar 		= false;
+	var agencies	    = new Array();
 	var circleLayer		= new L.LayerGroup();
 	var estacionesLayer	= new L.LayerGroup();
 	var lineasLayer 	= new L.LayerGroup();
-	
-	//Sidebar
-	var sidebar = L.control.sidebar('sidebar').addTo(map);
-	
 	var geojsonMarkerOptions = {
 		radius: 10,
 		fillColor: "#008631",
@@ -153,9 +147,16 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 		"weight": 5,
 		"opacity": 0.65
 	};
-	
-	var agencies = new Array();
-	print(estaciones_zmvm, lineas_zmvm, "cdmx");
+		
+		
+	$(document).ready( function() {
+		L.mapbox.accessToken = 'pk.eyJ1IjoiY2Fhcmxvc2h1Z28xIiwiYSI6IklmZGNsNmMifQ.JJksWU3hBP-Vd3S9WtjFsA';
+		map = L.mapbox.map('map-box', 'caarloshugo1.h9bggm26',{scrollWheelZoom:false}).setView([19.432711775616433, -99.13325428962708], 13);
+
+		//Sidebar
+		sidebar = L.control.sidebar('sidebar').addTo(map);
+		print(estaciones_zmvm, lineas_zmvm, "cdmx");
+	});
 	
 	function print(estaciones, lineas, ciudad, filter) {
 		agencies = new Array();
@@ -324,7 +325,7 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 				$("#info-VivTodServ").html(feature.properties.VivTodServ);
 				$("#info-PobOcupada").html(feature.properties.PobOcupada);
 				$("#info-PobDesocup").html(feature.properties.PobDesocup);
-				$("#info-DensPobAvg").html(feature.properties.DensPobAvg);
+				$("#info-DensPobAvg").html(feature.properties.DensPob);
 				
 				circleLayer.addLayer(circle);
 				circleLayer.addTo(map);
