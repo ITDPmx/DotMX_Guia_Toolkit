@@ -658,13 +658,16 @@
     width: 100%;
 }
 .copyright p{
-    color: #009688;
+    color: #455A64;
     display: block;
     font-size: inherit;
     font-weight: 400;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 334px;
+}
+.copyright p a{
+    color: #009688;
 }
 .copyright ul{
     display: inline-block;
