@@ -61,7 +61,6 @@ angular.module('dotmxApp').controller('MainCtrl', function ($scope,$document,$mo
 		}
     }
 
-
 	$document.on('scroll', function() {
 		var topPosition = angular.element(document.getElementById('topcontrol'));
 		var topHeader = angular.element(document.getElementsByClassName('d-header'));
