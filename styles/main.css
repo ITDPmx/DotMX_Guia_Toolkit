@@ -174,7 +174,7 @@
     transition: color 0.25s linear;
 }
 .main{
-    height: 80vh;
+    height: 100vh;
     position: relative;
     color:#ffffff;
 }
@@ -185,6 +185,7 @@
 .main p{
     font-size: 18px;
     margin:0 0 30px;
+    font-weight: lighter;
 }
 .main .container{
     display:table;
@@ -215,6 +216,7 @@
     border-radius: 16px;
     border: 2px solid #fff;
     /*bottom: 0px;*/
+    top:300px;
     display: block;
     height: 50px;
     left: 50%;
