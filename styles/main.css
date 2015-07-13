@@ -174,7 +174,7 @@
     transition: color 0.25s linear;
 }
 .main{
-    height: 100vh;
+    height: 80vh;
     position: relative;
     color:#ffffff;
 }
